@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nazca Editor</title>
+    <link href="css/edit.css" rel="stylesheet">
+    <script src="js/marked.js"></script>
+    <script src="js/suncalc.js"></script>
+    <script src="js/edit.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div id="border-top" class="border">
+        <div id="help" onclick="showHelp()">?</div>
+        <div id="help-dialog">
+            <span id="exit-help" onclick="hideHelp()">X</span>
+            <div class="h1">Key Combinations</div>
+            <ul>
+                <li>CTRL + SHIFT + H :: Toggle display of this help dialog</li>
+                <li>CTRL + ALT + N :: Toggle <em>Night Mode</em>
+                </li>
+                <li>CTRL + ALT + P :: Toggle <em>Preview</em>
+                </li>
+                <li>CTRL + R :: Refresh the page</li>
+                <li>CTRL + O :: Open an existing file</li>
+                <li>CTRL + D :: Download the open document</li>
+            </ul>
+        </div>
+        <div id="download-dialog">
+            <span id="exit-download" onclick="hideDownload()">X</span>
+            <div class="h1">Download</div>
+            <br>
+            <div>
+                What should the file be named?
+                <br> &nbsp;&nbsp;
+                <input type="text" id="filename" name="filename" required placeholder="Filename">
+                <br>
+                <br> What Format? (.md, .txt, .docx)
+                <br>
+                <h2 style="display: inline;">.</h2>
+                <input type="text" id="file-extension" name="file-extension" required placeholder="md">
+            </div>
+            <div id="download-button" onclick="verifyDownloadInput(this)">Download</div>
+        </div>
+    </div>
+    <div id="paper" contenteditable="true"># Welcome to Nazca Writer
+        <div>
+            <br>
+        </div>
+        <div>Hello, and welcome to Nazca Writer, an online clone of iA Writer (Copy. [**Information Architects Inc.**](http://ia.net))!</div>
+        <div>
+            <div>
+                <br>
+            </div>
+            <div>There are a lot of shortcuts and other features to help you work faster, for example, to view this Markdown file as live HTML, press *CTRL + ALT + P* (You may have to press it twice the first time, it's still a little buggy). A list of all commands for features like downloading and opening files can found in the Help dialog. Accessing the Help dialog is as simple as clicking the question mark in the top-right corner of the screen, or using the key combination *CTRL + SHIFT + H*.
+                <br>
+                <br>Nazca Writer as allows basic editing features found in most text editors using their corresponding system key combination, such as *CTRL + V* to paste in Windows or Chrome OS, and *CMD + V* in Mac OS.
+                <br>
+                <br>One last bit of information I should touch on is Night Mode, which changes the Ui to make it easy to edit documents in darker settings. Night Mode can be toggled using the key combination *CTRL + ALT + N*.
+                <br>
+                <br>
+                <br>Enjoy!
+                <br>
+                <br>-- Samuel Steele (Cryptoc1), [*Cryptocosm Developers*](http://cryptocosm.x10.bz)
+                <br>
+            </div>
+        </div>
+    </div>
+    <div id="preview">
+        <div id="preview-paper"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #363636;
+    background-color: #EFEBE9;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    transition: all .4s;
+}
+
+::selection {
+    background: rgba(3, 169, 244, .45);
+}
+
+.h1 {
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.border {
+    height: 5%;
+    width: 100%;
+    background-color: #EFEBE9;
+    position: fixed;
+    transition: all .4s;
+}
+
+#border-top {
+    top: 0;
+    left: 0;
+}
+
+#help {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #EFEBE9;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #363636;
+    opacity: .35;
+    padding: 4px;
+    margin: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+#help:hover {
+    box-shadow: 0px 2px 8px #BDBDBD;
+}
+
+#help:active {
+    box-shadow: 0px 2px 12px #BDBDBD;
+}
+
+#help-dialog {
+    font-size: 17px;
+    font-weight: 300;
+    color: #EFEBE9;
+    padding: 20px;
+    width: 400px;
+    height: auto;
+    background-color: rgba(54, 54, 54, .50);
+    opacity: 1;
+    position: fixed;
+    top: 30%;
+    left: 36%;
+    transition: all .5s;
+    transform: scale(0);
+    border-radius: 2px;
+}
+
+#exit-help {
+    float: right;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#help-dialog li {
+    list-style-type: none;
+    margin: 8px;
+}
+
+#download-dialog {
+    font-size: 17px;
+    font-weight: 300;
+    color: #EFEBE9;
+    padding: 20px;
+    width: 400px;
+    height: auto;
+    background-color: rgba(54, 54, 54, .8);
+    opacity: 1;
+    position: fixed;
+    top: 30%;
+    left: 36%;
+    transition: all .5s;
+    transform: scale(0);
+    border-radius: 2px;
+}
+
+#exit-download {
+    float: right;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#filename {
+    outline: none;
+    border: none;
+    padding: 6px;
+    margin: 3px;
+    font-size: 16px;
+    background-color: rgba(239, 235, 233, .8);
+    color: #363636;
+}
+
+#file-extension {
+    outline: none;
+    border: none;
+    padding: 6px;
+    margin: 3px;
+    margin-left: 0;
+    font-size: 16px;
+    background-color: rgba(239, 235, 233, .8);
+    color: #363636;
+}
+
+#download-button {
+    border-radius: 2px;
+    float: right;
+    padding: 5px;
+    margin: 2px;
+    background-color: rgba(239, 235, 233, .8);
+    cursor: pointer;
+    color: rgba(54, 54, 54, .8);
+}
+
+#paper {
+    font-family: 'Cutive Mono', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: #363636;
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 40px;
+    word-wrap: break-word;
+    outline: none;
+    display: block;
+    background-color: #EFEBE9;
+    border: none;
+    transition: all .4s;
+    white-space: normal;
+}
+
+#preview {
+    width: 100%;
+    height: 100%;
+    background-color: #EFEBE9;
+    color: #363636;
+    transition: all .5s;
+    transorm: scale(.85);
+    position: fixed;
+    top: 100%;
+    opacity: .95;
+    border-radius: 2px;
+    font-family: Georgia;
+    overflow-y: scroll;
+}
+
+#preview-paper {
+    width: 80%;
+    margin: 0 auto;
+    /*overflow-y: scroll;*/
+}
+
+#border-bottom {
+    bottom: 0;
+    left: 0;
+}
